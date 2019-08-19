@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>v2</title>
+</head>
+<body>
+<div id="app">
+    <div v-html="message"></div>
+    <p v-if="seen">现在你看到我了</p>
+    <div v-if="ok" v-bind:class="{'use': use}">
+        <p>哈哈哈，打字辛苦啊！！！</p>
+        <input type="button" value="点击我改变颜色"  @click="changeStatus()">
+    </div>
+
+    <ol>
+        <li v-for="site in object">
+            {{ site.name }}
+        </li>
+    </ol>
+</div>
+</body>
+</html>
