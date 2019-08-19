@@ -7,13 +7,13 @@ import App2 from '../js/App2.vue';
 
 new Vue({
     el: "#app",
-    render: (c) => c(
+    render: (h) => h(
         App2
     )
 });
 
 // new Vue({
-//     render: (c) => c(
+//     render: (h) => h(
 //         App2
 //    )
 // }).$mount('#app')
